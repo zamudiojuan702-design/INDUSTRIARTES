@@ -3,74 +3,244 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>INDUSTRIARTES</title>
+  <meta name="description" content="INDUSTRIARTES - Corte CNC y fabricación de piezas metálicas en lámina 2D y 3D. Precisión y calidad industrial y decorativa en Bogotá, Colombia.">
+  <title>INDUSTRIARTES | Corte CNC & Fabricación de Lámina 2D y 3D</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Custom CSS -->
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <div class="logo">INDUSTRIARTES</div>
-      <ul>
-        <li><a href="#inicio">Inicio</a></li>
-        <li><a href="#nosotros">Nosotros</a></li>
-        <li><a href="#servicios">Servicios</a></li>
-        <li><a href="#galeria">Galería</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+  <!-- Glowing Background Effects -->
+  <div class="bg-glow bg-glow-1"></div>
+  <div class="bg-glow bg-glow-2"></div>
+
+  <!-- Header & Navigation -->
+  <header class="main-header">
+    <div class="container header-container">
+      <a href="#" class="logo" id="header-logo">
+        <span class="logo-symbol">I</span>NDUSTRI<span class="highlight">ARTES</span>
+      </a>
+      <nav class="main-nav" id="navigation-menu">
+        <ul>
+          <li><a href="#inicio" class="active">Inicio</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="header-actions">
+        <a href="#contacto" class="btn btn-primary btn-sm" id="btn-cta-nav">Cotizar Ahora</a>
+      </div>
+    </div>
   </header>
 
-  <section id="inicio" class="hero">
-    <h1>Soluciones en Corte y Fabricación en Lámina 2D y 3D</h1>
-    <p>Precisión, calidad y cumplimiento para tus proyectos industriales y decorativos.</p>
-    <a href="#contacto" class="btn">Solicitar Cotización</a>
-  </section>
+  <main>
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <span class="badge"><i class="fa-solid fa-industry"></i> Metalmecánica de Precisión</span>
+          <h1 class="hero-title">Soluciones en Corte y Fabricación en <span class="text-gradient">Lámina 2D y 3D</span></h1>
+          <p class="hero-subtitle">Precisión, calidad y cumplimiento para tus proyectos industriales, comerciales y decorativos.</p>
+          <div class="hero-buttons">
+            <a href="#contacto" class="btn btn-primary" id="btn-hero-quote">Solicitar Cotización</a>
+            <a href="#servicios" class="btn btn-outline" id="btn-hero-services">Nuestros Servicios</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="art-card-wrapper">
+            <div class="art-card">
+              <div class="art-card-inner">
+                <div class="art-icon"><i class="fa-solid fa-shapes"></i></div>
+                <h3>Precisión CNC</h3>
+                <p>Diseño y corte de alta tecnología con acabados perfectos en lámina metálica.</p>
+              </div>
+            </div>
+            <div class="art-card-glow"></div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="nosotros" class="section">
-    <h2>¿Quiénes Somos?</h2>
-    <p>
-      INDUSTRIARTES es una empresa especializada en corte de lámina y fabricación
-      de piezas metálicas personalizadas en 2D y 3D para proyectos industriales,
-      comerciales y decorativos.
-    </p>
-  </section>
+    <!-- Nosotros Section -->
+    <section id="nosotros" class="section section-about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-content">
+            <span class="section-subtitle">¿Quiénes Somos?</span>
+            <h2 class="section-title">Pasión por la Precisión</h2>
+            <p class="about-text">
+              En <strong>INDUSTRIARTES</strong> somos especialistas en el corte de lámina y en la fabricación de piezas metálicas personalizadas en 2D y 3D. Acompañamos tus proyectos industriales, comerciales y de diseño decorativo con tecnología de punta y altos estándares de calidad.
+            </p>
+            <div class="about-stats">
+              <div class="stat-item">
+                <span class="stat-num">2D & 3D</span>
+                <span class="stat-label">Modelado y Fabricación</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-num">CNC</span>
+                <span class="stat-label">Corte de Alta Precisión</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-visual">
+            <div class="glow-box">
+              <i class="fa-solid fa-screwdriver-wrench wrench-icon"></i>
+              <h4>Calidad Garantizada</h4>
+              <p>Optimizamos procesos para cumplir con los tiempos de entrega pactados.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  <section id="servicios" class="section gray">
-    <h2>Nuestros Servicios</h2>
-    <div class="cards">
-      <div class="card">Corte CNC en lámina</div>
-      <div class="card">Diseños en 2D y 3D</div>
-      <div class="card">Piezas industriales</div>
-      <div class="card">Letras y avisos metálicos</div>
-      <div class="card">Doblado y ensamblaje</div>
-      <div class="card">Proyectos personalizados</div>
+    <!-- Servicios Section -->
+    <section id="servicios" class="section section-services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Servicios Profesionales</span>
+          <h2 class="section-title">Nuestras Capacidades</h2>
+        </div>
+        <div class="services-grid">
+          <div class="service-card" id="service-cnc">
+            <div class="service-icon"><i class="fa-solid fa-scissors"></i></div>
+            <h3>Corte CNC en lámina</h3>
+            <p>Cortes milimétricos y complejos en diversos calibres y tipos de lámina de metal.</p>
+          </div>
+          <div class="service-card" id="service-design">
+            <div class="service-icon"><i class="fa-solid fa-draw-polygon"></i></div>
+            <h3>Diseños en 2D y 3D</h3>
+            <p>Modelado y adaptabilidad técnica para dar volumen y forma tridimensional a tus ideas.</p>
+          </div>
+          <div class="service-card" id="service-industrial">
+            <div class="service-icon"><i class="fa-solid fa-gears"></i></div>
+            <h3>Piezas industriales</h3>
+            <p>Fabricación de componentes estructurales y partes mecánicas bajo especificaciones técnicas.</p>
+          </div>
+          <div class="service-card" id="service-signage">
+            <div class="service-icon"><i class="fa-solid fa-heading"></i></div>
+            <h3>Letras y avisos metálicos</h3>
+            <p>Identidad visual de alta durabilidad para locales, fachadas y oficinas comerciales.</p>
+          </div>
+          <div class="service-card" id="service-assembly">
+            <div class="service-icon"><i class="fa-solid fa-hammer"></i></div>
+            <h3>Doblado y ensamblaje</h3>
+            <p>Servicios complementarios de plegado y soldadura para entregar piezas listas para instalar.</p>
+          </div>
+          <div class="service-card" id="service-custom">
+            <div class="service-icon"><i class="fa-solid fa-lightbulb"></i></div>
+            <h3>Proyectos personalizados</h3>
+            <p>Diseño y fabricación a la medida para proyectos de arquitectura, arte y decoración.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería Section -->
+    <section id="galeria" class="section section-gallery">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Portafolio</span>
+          <h2 class="section-title">Galería de Trabajos</h2>
+          <p class="section-desc">Visualiza la calidad y precisión de nuestros acabados en metal.</p>
+        </div>
+        <div class="gallery-grid">
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Corte de Precisión CNC</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Pieza Metálica 3D</span>
+            </div>
+          </div>
+          <div class="gallery-item">
+            <div class="gallery-placeholder">
+              <i class="fa-regular fa-image"></i>
+              <span>Letreros y Avisos Corpóreos</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="section section-contact">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-info">
+            <span class="section-subtitle">¿Tienes un proyecto en mente?</span>
+            <h2 class="section-title">¡Hablemos Hoy Mismo!</h2>
+            <p>Escríbenos o visítanos para asesorarte y brindarte la mejor cotización para tu proyecto.</p>
+            
+            <div class="contact-details">
+              <div class="contact-detail-item">
+                <div class="icon-box"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="detail-text">
+                  <h5>Ubicación</h5>
+                  <p>Bogotá, Colombia</p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="icon-box"><i class="fa-solid fa-envelope"></i></div>
+                <div class="detail-text">
+                  <h5>Correo Electrónico</h5>
+                  <p><a href="mailto:correo@industriartes.com">correo@industriartes.com</a></p>
+                </div>
+              </div>
+              <div class="contact-detail-item">
+                <div class="icon-box"><i class="fa-solid fa-phone"></i></div>
+                <div class="detail-text">
+                  <h5>Teléfono / WhatsApp</h5>
+                  <p>+57 300 000 0000</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-card-wrapper">
+            <div class="contact-card">
+              <h3>Contacto Directo</h3>
+              <p>Envíanos un mensaje inmediato para agilizar tu cotización.</p>
+              <a class="whatsapp-btn-modern" href="https://wa.me/573000000000" target="_blank" id="whatsapp-link-btn">
+                <i class="fa-brands fa-whatsapp"></i> Escribir por WhatsApp
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container footer-container">
+      <div class="footer-info">
+        <a href="#" class="logo footer-logo" id="footer-logo">
+          <span class="logo-symbol">I</span>NDUSTRI<span class="highlight">ARTES</span>
+        </a>
+        <p>Soluciones industriales y de diseño en metalmecánica 2D y 3D.</p>
+      </div>
+      <div class="footer-socials">
+        <a href="#" aria-label="Instagram" id="social-instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" aria-label="WhatsApp" id="social-whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="footer-copyright">
+        <p>&copy; 2026 INDUSTRIARTES. Todos los derechos reservados.</p>
+      </div>
     </div>
-  </section>
-
-  <section id="galeria" class="section">
-    <h2>Galería</h2>
-    <p>Aquí podrás agregar fotos de tus trabajos realizados.</p>
-  </section>
-
-  <section id="contacto" class="section gray">
-    <h2>Contáctanos</h2>
-    <p>📍 Bogotá, Colombia</p>
-    <p>📞 WhatsApp: +57 300 000 0000</p>
-    <p>✉️ correo@industriartes.com</p>
-
-    <a
-      class="whatsapp-btn"
-      href="https://wa.me/573000000000"
-      target="_blank"
-    >
-      Escribir por WhatsApp
-    </a>
-  </section>
-
-  <footer>
-    <p>&copy; 2026 INDUSTRIARTES. Todos los derechos reservados.</p>
   </footer>
 
+  <!-- Custom Script -->
   <script src="script.js"></script>
 </body>
 </html>
