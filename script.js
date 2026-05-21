@@ -16,7 +16,53 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 
-    // 2. Efecto de iluminación interactiva (glow) que sigue al cursor en las tarjetas de servicios
+    // 2. Toggle de Menú Móvil (Hamburguesa)
+    const menuToggle = document.getElementById("mobile-menu-toggle");
+    const navMenu = document.getElementById("navigation-menu");
+    
+    if (menuToggle && navMenu) {
+        menuToggle.addEventListener("click", (e) => {
+            e.stopPropagation();
+            navMenu.classList.toggle("active");
+            
+            // Cambiar icono de hamburguesa a equis (X)
+            const icon = menuToggle.querySelector("i");
+            if (navMenu.classList.contains("active")) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-xmark");
+            } else {
+                icon.classList.remove("fa-xmark");
+                icon.classList.add("fa-bars");
+            }
+        });
+
+        // Cerrar el menú móvil al hacer clic fuera
+        document.addEventListener("click", (e) => {
+            if (!navMenu.contains(e.target) && !menuToggle.contains(e.target)) {
+                navMenu.classList.remove("active");
+                const icon = menuToggle.querySelector("i");
+                if (icon) {
+                    icon.classList.remove("fa-xmark");
+                    icon.classList.add("fa-bars");
+                }
+            }
+        });
+
+        // Cerrar menú móvil al hacer clic en un enlace de navegación
+        const navLinksList = navMenu.querySelectorAll("a");
+        navLinksList.forEach(link => {
+            link.addEventListener("click", () => {
+                navMenu.classList.remove("active");
+                const icon = menuToggle.querySelector("i");
+                if (icon) {
+                    icon.classList.remove("fa-xmark");
+                    icon.classList.add("fa-bars");
+                }
+            });
+        });
+    }
+
+    // 3. Efecto de iluminación interactiva (glow) en las tarjetas de servicios
     const serviceCards = document.querySelectorAll(".service-card");
     serviceCards.forEach(card => {
         card.addEventListener("mousemove", (e) => {
@@ -34,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     });
 
-    // 3. Resaltar enlace de navegación activo al hacer scroll
+    // 4. Resaltar enlace de navegación activo al hacer scroll
     const sections = document.querySelectorAll("section");
     const navLinks = document.querySelectorAll(".main-nav a");
 
